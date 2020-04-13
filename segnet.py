@@ -4,7 +4,7 @@ import torch.nn.functional as F
 from collections import OrderedDict
 
 class SegNet(nn.Module):
-    def __init__(self,input_nbr=3,label_nbr=22):
+    def __init__(self,input_nbr=3,label_nbr=22):    # input_nbr是指输入的channal数量，label_nbr指的是类别数量，21类+背景共22类
         super(SegNet, self).__init__()
 
         batchNorm_momentum = 0.1
